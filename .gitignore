@@ -1,0 +1,28 @@
+# es added for Studio 3
+.idea/misc.xml
+.idea/vcs.xml
+
+Save the file
+
+Switch back from Project to Android view.
+
+In the Terminal window, initialise git.
+
+git init
+git status
+
+git add .
+git status
+
+git commit -am "initial setup"
+git status
+
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild

@@ -39,7 +39,9 @@ public class TodoFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
 
-        UUID todoId = (UUID) getArguments().getSerializable(ARG_TODO_ID);
+//        UUID todoId = (UUID) getArguments().getSerializable(ARG_TODO_ID);
+        UUID todoId = (UUID) getActivity()
+                .getIntent().getSerializableExtra(TodoActivity.EXTRA_TODO_ID);
         mTodo = TodoModel.get(getActivity()).getTodo(todoId);
 
     }
